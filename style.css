@@ -1,0 +1,67 @@
+/* General Styling */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f9f9f9; }
+header { background: #d32f2f; color: white; padding: 2rem; text-align: center; }
+nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
+/* Grid Layout */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+.food-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; cursor: pointer; transition: 0.3s; }
+.food-card:hover { transform: scale(1.05); }
+.food-card img { width: 100%; height: 200px; object-fit: cover; }
+
+/* Feedback Section */
+.feedback-section { background: #eee; padding: 40px; margin-top: 20px; text-align: center; }
+textarea { width: 80%; height: 100px; padding: 10px; margin-bottom: 10px; }
+button { background: #d32f2f; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+
+/* Modal Styling */
+.modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); }
+.modal-content { background-color: white; margin: 10% auto; padding: 20px; width: 60%; border-radius: 10px; }
+.close { float: right; font-size: 28px; cursor: pointer; }
+/* About Page Specifics */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.text-block {
+    flex: 2;
+}
+
+.profile-card {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    border-top: 5px solid #d32f2f;
+}
+
+.profile-img-placeholder {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+}
