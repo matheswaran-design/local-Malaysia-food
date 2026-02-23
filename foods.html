@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Malaysian Recipes | Instructions & Ingredients</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Authentic Malaysian Recipes</h1>
+        <nav><a href="index.html">Back to Home</a></nav>
+    </header>
+
+    <main class="grid">
+        <div class="food-card" onclick="openModal('nasiModal')">
+            <img src="nasi-lemak.jpg" alt="Nasi Lemak Ingredients">
+            <h3>Nasi Lemak</h3>
+            <p>Click for Recipe</p>
+        </div>
+
+        <div class="food-card" onclick="openModal('laksaModal')">
+            <img src="asam-laksa.jpg" alt="Asam Laksa Ingredients">
+            <h3>Asam Laksa</h3>
+            <p>Click for Recipe</p>
+        </div>
+
+        <div class="food-card" onclick="openModal('rotiModal')">
+            <img src="roti-canai.jpg" alt="Roti Canai Ingredients">
+            <h3>Roti Canai</h3>
+            <p>Click for Recipe</p>
+        </div>
+
+        <div class="food-card" onclick="openModal('kuihModal')">
+            <img src="kuih-lapis.jpg" alt="Kuih Lapis Ingredients">
+            <h3>Kuih Lapis</h3>
+            <p>Click for Recipe</p>
+        </div>
+    </main>
+
+    <div id="nasiModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nasiModal')">&times;</span>
+            <h2>Nasi Lemak Recipe</h2>
+            <h4>Ingredients</h4>
+            <p>2 cups Jasmine rice, 1.5 cups Coconut milk, Pandan leaves, Dried anchovies, Peanuts, Sambal paste...</p>
+            <h4>Instructions</h4>
+            <p>1. Cook rice with coconut milk and pandan. 2. Fry anchovies until crispy. 3. Serve with sambal and boiled egg.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) { document.getElementById(id).style.display = "block"; }
+        function closeModal(id) { document.getElementById(id).style.display = "none"; }
+    </script>
+</body>
+</html>
