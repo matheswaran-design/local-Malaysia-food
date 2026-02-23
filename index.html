@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian Food Diary | Authentic Recipes & Culinary Stories</title>
+    <meta name="description" content="Explore the rich flavors of Malaysia. From Nasi Lemak to Kuih Lapis, discover authentic recipes, ingredients, and the stories behind Malaysia's national dishes.">
+    <meta name="keywords" content="Malaysian Food Diary, Nasi Lemak recipe, Asam Laksa, Roti Canai, Kuih Lapis, Malaysian cuisine, cooking instructions">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Malaysian Food Diary</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="foods.html">Explore Foods</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>A Journey Through Flavours and Stories</h2>
+            <p>Step into Malaysian Food Diary, where every bite tells a story, and every dish invites you on a journey across Malaysia’s rich culinary landscape. Here, food is more than just sustenance, it’s culture, tradition, and a celebration of heritage...</p>
+            <p>Imagine waking up to the fragrant aroma of <strong>Nasi Lemak</strong>, the crisp layers of <strong>Roti Canai</strong>, the tangy <strong>Asam Laksa</strong>, or the colourful <strong>Kuih Lapis</strong>. Join us as we savour the history of Malaysia’s most beloved dishes.</p>
+        </section>
+
+        <section class="food-gallery">
+            <h3>Our Featured Dishes</h3>
+            <div class="grid">
+                <div class="food-card">
+                    <a href="foods.html#nasi-lemak">
+                        <img src="nasi-lemak.jpg" alt="Nasi Lemak - Malaysian Coconut Rice with Sambal">
+                        <p>Nasi Lemak</p>
+                    </a>
+                </div>
+                <div class="food-card">
+                    <a href="foods.html#asam-laksa">
+                        <img src="asam-laksa.jpg" alt="Penang Asam Laksa - Tangy Fish Noodle Soup">
+                        <p>Asam Laksa</p>
+                    </a>
+                </div>
+                <div class="food-card">
+                    <a href="foods.html#roti-canai">
+                        <img src="roti-canai.jpg" alt="Roti Canai - Flaky Malaysian Flatbread">
+                        <p>Roti Canai</p>
+                    </a>
+                </div>
+                <div class="food-card">
+                    <a href="foods.html#kuih-lapis">
+                        <img src="kuih-lapis.jpg" alt="Kuih Lapis - Colorful Steamed Layer Cake">
+                        <p>Kuih Lapis</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <h3>Website Feedback</h3>
+            <form id="feedbackForm">
+                <textarea id="userInput" placeholder="Help us improve our website..." required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <div id="displayFeedback">
+                <h4>Recent Feedback:</h4>
+                <ul id="feedbackList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Malaysian Food Diary | Built for SEO Excellence</p>
+    </footer>
+
+    <script>
+        // Logic to display feedback on the page
+        const form = document.getElementById('feedbackForm');
+        const list = document.getElementById('feedbackList');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = document.getElementById('userInput');
+            const li = document.createElement('li');
+            li.textContent = input.value;
+            list.appendChild(li);
+            input.value = '';
+        });
+    </script>
+</body>
+</html>
